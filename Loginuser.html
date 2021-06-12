@@ -32,13 +32,13 @@
                         <span>Control de Usuarios</span>
                     </section>
                     <section id="formulario">
-                        <form action="" method="$_POST">
+                        <form action="PHP/controladores/Autenticacion.php" method="POST">
                             <span style="padding-bottom: 5px;">Usuario:</span>
-                            <input type="email" name="" id="email" placeholder="Ingresar usuario">
+                            <input type="text" name="User" id="email" placeholder="Ingresar usuario">
                             <span style="padding-top: 5px; padding-bottom: 5px;">Contraseña:</span>
-                            <input type="password" name="" id="password" placeholder="Ingrese contraseña">
+                            <input type="password" name="Pass" id="password" placeholder="Ingrese contraseña">
                             <div id="botones">
-                                <input type="submit" value="Ingresar">
+                                <input type="submit" value="Ingresar" name="EnviarU">
                                 <input type="reset" value="Borrar">
                             </div>
                         </form>

@@ -1,3 +1,16 @@
+/*Importar estilo*/
+@font-face {
+    font-family: 'Robot';
+    src: url(../Font/Roboto-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Robot1';
+    src: url(../Font/NotoSansJP-Regular.otf); 
+}
+/*Fin*/
+
+/*Imagen total*/
 body{
     background-image: url(../ImagenesWEB/1-BACKGROUND.jpg);
     background-position: center center; /*Para centar imagen*/
@@ -7,6 +20,46 @@ body{
     background-color: #ffffff;/*Por si no carga*/
     height: 100%;
 }
+/*Fin*/
+
+/*Letras*/
+span{
+    font-size: 2rem;
+    color: white;
+    font-family: 'Robot';
+}
+/*Fin*/
+/*Modificacion a Input*/
+#email,
+#password{
+    font-family: 'Robot1';
+    font-size: 1.4rem;
+    color: black;
+    padding-left: 1.8rem ;
+    border:none;
+    border-radius: 0.5rem;
+}
+
+input[type="submit"]{
+    background-color: rgb(0, 156, 140);
+}
+input[type="reset"]{
+    background-color: rgb(251, 186, 0);
+}
+
+input[type="submit"],
+input[type="reset"]{
+    border: none;
+    border-radius: 5rem;
+    width: 10rem;
+    height: 3.5rem;
+    font-family: 'Robot';
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+/*Fin*/
+
 
 #contenedor{
     display: grid;
@@ -22,11 +75,35 @@ body{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 3rem;
+}
+
+#contenedor3{
+    padding: 3.5rem;
+}
+
+#contenedorimagen,
+#control{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+#control{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#formulario{
+    padding-left: 8.5rem;
+    padding-right: 8.5rem;
+}
 form{
     display: flex;
     flex-direction: column;
+}
+
+#botones{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
 }

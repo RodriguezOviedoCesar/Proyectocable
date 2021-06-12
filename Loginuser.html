@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="Others/js/jquery.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de usuarios cablevisión</title>
+    <link rel="shortcut icon" href="Others/ImagenesWEB/Logo Empresa/cropped-favicon-180x180.png" type="image/x-icon">
+    <link rel="preload" href="Others/CSS/fontsizegeneral.css" as="style">
+    <link rel="stylesheet" href="Others/CSS/fontsizegeneral.css">
+    <link rel="preload" href="Others/CSS/Loginuser.css" as="style">
+    <link rel="stylesheet" href="Others/CSS/Loginuser.css">
+    
+    <script type="text/javascript">
+        $(document).ready(function (){
+            var heigth = $(window).height();
+            $('#contenedor').height(heigth);
+        });
+    </script>
+        
+</head>
+<body>
+    <section id="contenedor">
+        <section id="contenedor1">
+            <section id="contenedor2">
+                <section id="contenedorimagen">
+                    <section>
+                        <img src="Others/ImagenesWEB/Logo Empresa/logo-cv-color.png" alt="">
+                    </section>
+                    <section id="control">
+                        <span>Control de Usuarios</span>
+                    </section>
+                    <section id="formulario">
+                        <form action="" method="$_POST">
+                            <span>Usuario</span>
+                            <input type="email" name="" id="" placeholder="Ingresar usuario">
+                            <span>Contraseña</span>
+                            <input type="password" name="" id="" placeholder="Ingrese contraseña">
+                            <div id="botones">
+                                <input type="submit" value="Ingresar">
+                                <input type="reset" value="Borrar">
+                            </div>
+                        </form>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+</body>
+</html>

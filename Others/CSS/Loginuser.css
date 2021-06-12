@@ -1,0 +1,32 @@
+body{
+    background-image: url(../ImagenesWEB/1-BACKGROUND.jpg);
+    background-position: center center; /*Para centar imagen*/
+    background-repeat: no-repeat;/*Para que no se repita*/
+    background-attachment: fixed;/*Para fijar la imagen*/
+    background-size: cover;/*Rescala automatico el color*/
+    background-color: #ffffff;/*Por si no carga*/
+    height: 100%;
+}
+
+#contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+#contenedor1{
+    grid-column-start:2;
+    grid-row-start: 2;
+}
+#contenedor2{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}

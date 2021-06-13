@@ -29,10 +29,10 @@ if($U){
                                     if($Usuarios['id_usuario'] === $tipos['id_usuario']){
                                         if($tipos['categoria'] === 'supervisor'){
                                             $id =  $tipos['id_usuario'];
-                                            header("location:../../PHP/vistas/Supervisor.php?id=$id;");
+                                            header("location:../../PHP/vistas/Supervisor/Supervisor.php?id=$id;");
                                         }else if($tipos['categoria'] === 'Agente'){
                                             $id = $tipos['id_usuario'];
-                                            header("location:../../PHP/vistas/Agente.php?id=$id;");
+                                            header("location:../../PHP/vistas/Agente/Agente.php?id=$id;");
                                         }
                                     }
                                 }
